@@ -61,8 +61,13 @@ def max(df):
 	return max
 
 def perc(df, mod, count, max):
-	perc = mod / 100 * (count + 1)
-	print(perc)
+	perc = sorted[round(mod * (count + 1))]
+	# print(perc1)
+	# perc2 = df[int(mod * (count + 1)) - 1]
+	# print(perc2)
+	# weight = (perc1 - perc2) * mod
+	# print(weight)
+	# perc = (perc1 + perc2) / 2 + weight
 	return perc
 	
 
@@ -86,6 +91,7 @@ for i in range(countOfFeatures):
 print(input.describe())
 # print(len(df))
 # print(len(df.columns))
+print("\nmine")
 pd.options.display.float_format = "{:.6f}".format
 print(output)
 tableInfo = "\n[" + str(len(output)) + " rows x " + str(len(output.columns)) + " columns]"
